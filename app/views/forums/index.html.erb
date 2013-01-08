@@ -1,0 +1,9 @@
+<%= link_to 'Load', '/forums/load' -%>
+
+<% @forums.each do |forum| -%>
+  <p>
+    <%= forum.key -%>
+    <%= link_to forum.remote_url -%>
+  </p>
+<% end -%>
+  

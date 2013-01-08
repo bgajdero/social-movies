@@ -9,6 +9,11 @@ gem 'sqlite3'
 
 gem 'json'
 
+gem "haml"  #, "3.0.25"
+gem 'hpricot'
+gem 'httparty', '0.8.1'
+gem 'httpclient'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

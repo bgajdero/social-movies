@@ -1,0 +1,13 @@
+<h1>Box office movies</h1>
+
+<% @movies.each do |movie| %>
+<div class="movie-row">
+  <div class="poster">
+    <%= link_to(image_tag(movie.poster), movie) %>
+  </div>
+  <div class="title">
+    <%= link_to movie.title, movie %><br /><br/>
+    <em>Tomatometer:</em> <h1><%= movie.critics_rating %>%</h1>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,18 @@
+// Place all the styles related to the Movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.movie-row {
+	height:150px;
+	margin-bottom:10px;
+	.poster {
+		float:left;
+		height:150px;
+		margin-right:10px;
+		img {
+			height:150px;
+		}
+	}
+	.title {
+		float:left;
+	}
+}

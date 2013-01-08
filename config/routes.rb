@@ -6,4 +6,9 @@ SocialMovies::Application.routes.draw do
     end
   end
 
+  resources :movies
+
+
+  root :to => 'movies#index'
+
 end

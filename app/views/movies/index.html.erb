@@ -1,0 +1,7 @@
+<h1>Box office movies</h1>
+
+<% @movies.each do |movie| %>
+<p><%= link_to movie.title, movie %>
+<%= image_tag(movie.poster) %>
+</p>
+<% end %>

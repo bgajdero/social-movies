@@ -12,3 +12,11 @@
 <div style="clear:both;padding-top:25px">
 <%= link_to "Back to movies...", movies_path %>
 </div>
+
+<h3>
+Comments
+<% @comments.each do |comment| &>
+  <p>
+    <%= comment.body -%>
+  </p>
+<% end -%>

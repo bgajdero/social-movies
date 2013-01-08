@@ -14,6 +14,7 @@ class MoviesController < ApplicationController
   # GET /movies/1.json
   def show
     @movie = Movie.find(params[:id])
+    @comments = Comment.search(@movie.title)
 
     respond_to do |format|
       format.html # show.html.erb
